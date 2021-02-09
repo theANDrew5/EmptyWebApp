@@ -1,10 +1,12 @@
-﻿@page
+﻿@page "{id}"
 @model EmptyWebApp.Pages.PersonModel
 @{
     ViewData["Tittle"] = "Ввод данных";
+    var userid = RouteData.Values["id"];
 }
 
-<h2>@Model.Message</h2>
+<h2>Id = @userid</h2>
+<h3>@Model.Message</h3>
 <form method="post">
     <label for="name">Имя</label><br />
     <input type="text" name="name" id="name" /><br /><br />
