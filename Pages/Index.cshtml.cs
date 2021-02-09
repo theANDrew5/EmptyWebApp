@@ -9,6 +9,11 @@ namespace EmptyWebApp.Pages
 {
     public class IndexModel : PageModel
     {
+
+        public IActionResult OnGet()
+        {
+            return RedirectToPage("Exchange");//переадресация на другую страницу
+        }
     //    public string Name { get; set; }
     //    public int? Age { get; set; }// знак вопроса говорит о том, что значение может быть null
     //    public bool IsCorrect { get; set; } = true;
