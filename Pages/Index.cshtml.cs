@@ -12,7 +12,7 @@ namespace EmptyWebApp.Pages
 
         public IActionResult OnGet()
         {
-            return RedirectToPage("Exchange");//переадресация на другую страницу
+            return RedirectToPage("Person");//переадресация на другую страницу
         }
     //    public string Name { get; set; }
     //    public int? Age { get; set; }// знак вопроса говорит о том, что значение может быть null
